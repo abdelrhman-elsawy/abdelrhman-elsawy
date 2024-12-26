@@ -1548,7 +1548,7 @@ footer .footer-content .links {
   }
 
   .ad-whyus .row {
-    flex-direction: column-reverse;
+    flex-direction: column-reverse !important;
   }
 
   .ad-whyus .phones {
