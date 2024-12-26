@@ -1165,6 +1165,19 @@ nav.fixed-nav .nav-content button.open-nav img {
   opacity: 0.8;
 }
 
+.tags .col-12 .buttons {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 30px;
+  gap: 12px;
+  position: absolute;
+  bottom: 25%;
+  left: 50%;
+  transform: translateX(-50%);
+}
+
 /* End Faqs Section */
 
 /* Start Last News Section */
