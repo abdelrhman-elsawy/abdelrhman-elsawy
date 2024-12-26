@@ -29,7 +29,13 @@
     <nav>
         <div class="container">
             <div class="nav-content">
+            
+
                 <div class="lang-dropdown">
+                    <button class="open-nav"> 
+                        <img src="./images/icons/bars.svg" class="bars icons"/>
+                    </button>
+
                     <button>
                         <i class="las la-chevron-circle-down"></i>
                         العربية
@@ -39,46 +45,51 @@
 
                 <div class="nav-elements">
                     <ul>
+                        <li> 
+                            <button class="close-nav">
+                                <i class="las la-times"></i>
+                            </button>
+                        </li>
                         <li>
-                            <a href="#">
+                            <a href="#partners">
                                 شركاءنا
                             </a>
                         </li>
 
 
                         <li>
-                            <a href="#">
+                            <a href="#faqs">
                                 الأسئلة الشائعة
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#rates">
                                 أراء العملاء
                             </a>
                         </li>
 
 
                         <li>
-                            <a href="#">
+                            <a href="#tags">
                                 العلامات التجارية
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#categories">
                                 التصنيفات
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#why-tamween">
                                 لماذا تموين
                             </a>
                         </li>
 
                         <li>
-                            <a href="#">
+                            <a href="#home">
                                 الرئيسية
                             </a>
                         </li>
@@ -100,20 +111,20 @@
 
     <!-- Start Hero Section -->
 
-    <section class="hero">
+    <section id="home" class="hero">
         <img class="line" src="./images/hero/line.svg" />
         <div class="container">
             <div class="row">
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="image">
                         <img src="./images/hero/IphoneImg.png" />
                     </div>
                 </div>
 
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                     <div class="text">
-                        <h1>  <span>تموين </span>  هو وجهتك المثالية للتسوق بالجملة في عُمان </h1>
+                        <h1> <span>تموين </span> هو وجهتك المثالية للتسوق بالجملة في عُمان </h1>
 
                         <p> مع مجموعة واسعة من المنتجات، من المواد الغذائية إلى مستلزمات التنظيف، وأهم العلامات التجارية
                             العمانية والدولية الموثوقة.</p>
@@ -157,7 +168,7 @@
 
     <!-- Start Whyus Section -->
 
-    <section class="why-us">
+    <section  id="why-tamween" class="why-us">
 
         <img class="line" src="./images/hero/line.svg" />
         <div class="container">
@@ -165,90 +176,104 @@
             <div class="row">
 
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="image">
-                        <img src="./images/whyus/phone.png" />
+                <div class="row">
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="image">
+                            <img src="./images/whyus/phone.png" />
+                        </div>
                     </div>
-                </div>
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="text">
-                        <h1> فاتورة واحدة </h1>
-                        <p>
-                            يمكنك الحصول على كل ما يحتاجه متجرك من منصة واحدة، مما يقلل الوقت والجهد في متابعة عشرات
-                            الموردين.
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="text">
-                        <h1> توصيل موثوق وفي الوقت المحدد </h1>
-                        <p>
-                            يمكنك الحصول على كل ما يحتاجه متجرك من منصة واحدة، مما يقلل الوقت والجهد في متابعة عشرات
-                            الموردين.
-
-                        </p>
-                    </div>
-                </div>
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="image">
-                        <img src="./images/whyus/delivery.png" />
-                        <img class="circle" src="./images/whyus/circle.png" />
-
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="text">
+                            <h1> فاتورة واحدة </h1>
+                            <p>
+                                يمكنك الحصول على كل ما يحتاجه متجرك من منصة واحدة، مما يقلل الوقت والجهد في متابعة عشرات
+                                الموردين.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="image">
-                        <img src="./images/whyus/shopchart.png" />
-                        <img class="circle" src="./images/whyus/circle.png" />
+                <div class="row rev-row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="text">
+                            <h1> توصيل موثوق وفي الوقت المحدد </h1>
+                            <p>
+                                يمكنك الحصول على كل ما يحتاجه متجرك من منصة واحدة، مما يقلل الوقت والجهد في متابعة عشرات
+                                الموردين.
+
+                            </p>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="image">
+                            <img src="./images/whyus/delivery.png" />
+                            <img class="circle" src="./images/whyus/circle.png" />
+
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div class="row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="image">
+                            <img src="./images/whyus/shopchart.png" />
+                            <img class="circle" src="./images/whyus/circle.png" />
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="text">
+                            <h1> تنوع منتجات أكثر </h1>
+                            <p>
+                                من المنتجات الأساسية اليومية إلى السلع الجديدة والمتنوعة، لدينا كل ما تحتاجه.
+                            </p>
+                        </div>
                     </div>
                 </div>
 
 
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="text">
-                        <h1> تنوع منتجات أكثر </h1>
-                        <p>
-                            من المنتجات الأساسية اليومية إلى السلع الجديدة والمتنوعة، لدينا كل ما تحتاجه.
-                        </p>
+                <div class="row rev-row">
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="text">
+                            <h1> سعر أفضل </h1>
+                            <p>
+                                احصل على مجموعة من العلامات التجارية العمانية والعربية الشهيرة، مع منتجات عالية الجودة
+                                ويثق
+                                بها عملاؤك.
+                            </p>
+                        </div>
+                    </div>
+
+
+                    <div class="col-lg-6 col-md-12 col-sm-12 col-12">
+                        <div class="image">
+                            <img src="./images/whyus/phone.png" />
+                        </div>
                     </div>
                 </div>
 
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="text">
-                        <h1> سعر أفضل </h1>
-                        <p>
-                            احصل على مجموعة من العلامات التجارية العمانية والعربية الشهيرة، مع منتجات عالية الجودة ويثق
-                            بها عملاؤك.
-                        </p>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-6 col-md-6 col-sm-12 col-12">
-                    <div class="image">
-                        <img src="./images/whyus/phone.png" />
-                    </div>
-                </div>
 
 
                 <div class="ad-whyus col-lg-12 col-md-12 col-sm-12 col-12">
                     <img src="./images//whyus/dots.svg" />
                     <div class="row">
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="phones">
                                 <img src="./images/whyus/phone1.png" />
                                 <img src="./images/whyus/phone2.png" />
                             </div>
                         </div>
 
-                        <div class="col-lg-6 col-md-6 col-sm-12 col-12">
+                        <div class="col-lg-6 col-md-12 col-sm-12 col-12">
                             <div class="text">
                                 <h1> وفر جهدك وفلوسك و حمل التطبيق. </h1>
 
@@ -292,7 +317,7 @@
     <!-- Start Categories Section -->
 
 
-    <section class="categories">
+    <section  id="categories" class="categories">
         <img class="line" src="./images/hero/line.svg" />
 
         <div class="container">
@@ -303,97 +328,121 @@
 
 
             <div class="row">
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-1">
-                        <h2> الخضروات والفواكه </h2>
-                        <img src="./images/categories/1.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-1">
+                            <h2> الخضروات والفواكه </h2>
+                            <img src="./images/categories/1.png" />
+                        </div>
+                    </a>
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-2">
-                        <h2> الفطور والمخبزوزات </h2>
-                        <img src="./images/categories/2.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-2">
+                            <h2> الفطور والمخبزوزات </h2>
+                            <img src="./images/categories/2.png" />
+                        </div>
+                    </a>
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-3">
-                        <h2> التنظيف والغسيل </h2>
-                        <img src="./images/categories/3.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-3">
+                            <h2> التنظيف والغسيل </h2>
+                            <img src="./images/categories/3.png" />
+                        </div>
+                    </a>
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-4">
-                        <h2> الوجبات الخفيفة والحلوى </h2>
-                        <img src="./images/categories/4.png" />
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-5">
-                        <h2> البهارات والأطعمة المعلبة </h2>
-                        <img src="./images/categories/5.png" />
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-6">
-                        <h2> الماء والمشروبات </h2>
-                        <img src="./images/categories/6.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-4">
+                            <h2> الوجبات الخفيفة والحلوى </h2>
+                            <img src="./images/categories/4.png" />
+                        </div>
+                    </a>
                 </div>
 
 
-
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-7">
-                        <h2> تصنيفات أخرى </h2>
-                        <img src="./images/categories/7.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-5">
+                            <h2> البهارات والأطعمة المعلبة </h2>
+                            <img src="./images/categories/5.png" />
+                        </div>
+                    </a>
                 </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-8">
-                        <h2> الأطعمة المجمدة واللحوم </h2>
-                        <img src="./images/categories/8.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-6">
+                            <h2> الماء والمشروبات </h2>
+                            <img src="./images/categories/6.png" />
+                        </div>
+                    </a>
                 </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-9">
-                        <h2>الألبان والبيض </h2>
-                        <img src="./images/categories/9.png" />
-                    </div>
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-7">
+                            <h2> تصنيفات أخرى </h2>
+                            <img src="./images/categories/7.png" />
+                        </div>
+                    </a>
                 </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-10">
-                        <h2> العناية والجمال </h2>
-                        <img src="./images/categories/10.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-8">
+                            <h2> الأطعمة المجمدة واللحوم </h2>
+                            <img src="./images/categories/8.png" />
+                        </div>
+                    </a>
                 </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-11">
-                        <h2> الحبوب والأرز </h2>
-                        <img src="./images/categories/11.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-9">
+                            <h2>الألبان والبيض </h2>
+                            <img src="./images/categories/9.png" />
+                        </div>
+                    </a>
                 </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-4 col-12">
-                    <div class="category cat-col-12">
-                        <h2>الأدوات المنزلية </h2>
-                        <img src="./images/categories/12.png" />
-                    </div>
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-10">
+                            <h2> العناية والجمال </h2>
+                            <img src="./images/categories/10.png" />
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-11">
+                            <h2> الحبوب والأرز </h2>
+                            <img src="./images/categories/11.png" />
+                        </div>
+                    </a>
+                </div>
+
+
+                <div class="col-lg-2 col-md-4 col-sm-4 col-6">
+                    <a href="#">
+                        <div class="category cat-col-12">
+                            <h2>الأدوات المنزلية </h2>
+                            <img src="./images/categories/12.png" />
+                        </div>
+                    </a>
                 </div>
 
 
@@ -406,7 +455,7 @@
 
     <!-- Start Partners Section -->
 
-    <section class="partners">
+    <section  id="tags" class="partners">
         <img class="line" src="./images/hero/line.svg" />
 
         <div class="container">
@@ -425,94 +474,288 @@
                     <h1> العلامات التجارية المتاحة </h1>
                 </div>
 
+                <div class="partners-slider">
+                    <div class="slide">
+                        <div class="row">
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/1.png" />
-                        <h4>كارتا </h4>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/1.png" />
+                                    <h4>كارتا </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/2.png" />
+                                    <h4>زمردة </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/3.png" />
+                                    <h4>أريج </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/4.png" />
+                                    <h4>لويال </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/5.png" />
+                                    <h4>أمانة </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/6.png" />
+                                    <h4>أثر </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/7.png" />
+                                    <h4>كرم زمزم </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/8.png" />
+                                    <h4>الشرع </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/9.png" />
+                                    <h4>شركة ظافر </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/10.png" />
+                                    <h4>مجان </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/11.png" />
+                                    <h4>المحروقي </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/12.png" />
+                                    <h4>صافي الذهبي </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="slide">
+                        <div class="row">
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/2.png" />
-                        <h4>زمردة </h4>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/1.png" />
+                                    <h4>كارتا </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/2.png" />
+                                    <h4>زمردة </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/3.png" />
+                                    <h4>أريج </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/4.png" />
+                                    <h4>لويال </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/5.png" />
+                                    <h4>أمانة </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/6.png" />
+                                    <h4>أثر </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/7.png" />
+                                    <h4>كرم زمزم </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/8.png" />
+                                    <h4>الشرع </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/9.png" />
+                                    <h4>شركة ظافر </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/10.png" />
+                                    <h4>مجان </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/11.png" />
+                                    <h4>المحروقي </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/12.png" />
+                                    <h4>صافي الذهبي </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
-                </div>
+                    <div class="slide">
+                        <div class="row">
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/3.png" />
-                        <h4>أريج </h4>
-                    </div>
-                </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/1.png" />
+                                    <h4>كارتا </h4>
+                                </div>
+                            </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/4.png" />
-                        <h4>لويال </h4>
-                    </div>
-                </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/2.png" />
+                                    <h4>زمردة </h4>
+                                </div>
+                            </div>
 
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/3.png" />
+                                    <h4>أريج </h4>
+                                </div>
+                            </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/5.png" />
-                        <h4>أمانة </h4>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/6.png" />
-                        <h4>أثر </h4>
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/7.png" />
-                        <h4>كرم زمزم </h4>
-                    </div>
-                </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/4.png" />
+                                    <h4>لويال </h4>
+                                </div>
+                            </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/8.png" />
-                        <h4>الشرع </h4>
-                    </div>
-                </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/5.png" />
+                                    <h4>أمانة </h4>
+                                </div>
+                            </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/9.png" />
-                        <h4>شركة ظافر </h4>
-                    </div>
-                </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/6.png" />
+                                    <h4>أثر </h4>
+                                </div>
+                            </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/10.png" />
-                        <h4>مجان </h4>
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/11.png" />
-                        <h4>المحروقي </h4>
-                    </div>
-                </div>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/7.png" />
+                                    <h4>كرم زمزم </h4>
+                                </div>
+                            </div>
 
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-12">
-                    <div class="partner">
-                        <img src="./images/partners/12.png" />
-                        <h4>صافي الذهبي </h4>
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/8.png" />
+                                    <h4>الشرع </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/9.png" />
+                                    <h4>شركة ظافر </h4>
+                                </div>
+                            </div>
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/10.png" />
+                                    <h4>مجان </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/11.png" />
+                                    <h4>المحروقي </h4>
+                                </div>
+                            </div>
+
+
+                            <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                                <div class="partner">
+                                    <img src="./images/partners/12.png" />
+                                    <h4>صافي الذهبي </h4>
+                                </div>
+                            </div>
+                        </div>
                     </div>
                 </div>
             </div>
@@ -523,7 +766,8 @@
 
     <!-- Start Rates Section-->
 
-    <section class="rates">
+    <section  id="rates" class="rates">
+        <div class="overlay-left"></div>
         <img src="./images/rates/shreet.png" />
         <div class="container">
             <div class="header">
@@ -537,7 +781,7 @@
             </div>
 
             <div class="slider">
-                <div class="overlay-left"></div>
+                
                 <div class="rates-slider">
                     <div class="slide">
                         <div class="rate">
@@ -588,8 +832,58 @@
                         </div>
                     </div>
 
+
+                    <div class="slide">
+                        <div class="rate">
+                            <img src="./images/rates/lines.png" />
+                            <p> التطبيق فعلاً ممتاز وسهل الاستخدام! قدرت أشتري كل احتياجاتي للمنزل من المنتجات الغذائية
+                                بكل سهولة ومن دون أي تعب. المنتجات كانت طازجة، والأسعار معقولة، وخدمة التوصيل كانت سريعة
+                                وموثوقة. تجربة رائعة وأنصح الجميع باستخدامه لتوفير الوقت والجهد! </p>
+                            <div class="info">
+                                <div>
+                                    <h3> محمد علي </h3>
+                                    <h4> متجر محمد </h4>
+                                </div>
+                                <img src="./images/rates/user.png" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="rate">
+                            <img src="./images/rates/lines.png" />
+                            <p> التطبيق فعلاً ممتاز وسهل الاستخدام! قدرت أشتري كل احتياجاتي للمنزل من المنتجات الغذائية
+                                بكل سهولة ومن دون أي تعب. المنتجات كانت طازجة، والأسعار معقولة، وخدمة التوصيل كانت سريعة
+                                وموثوقة. تجربة رائعة وأنصح الجميع باستخدامه لتوفير الوقت والجهد! </p>
+                            <div class="info">
+                                <div>
+                                    <h3> محمد علي </h3>
+                                    <h4> متجر محمد </h4>
+                                </div>
+                                <img src="./images/rates/user.png" />
+                            </div>
+                        </div>
+                    </div>
+
+
+                    <div class="slide">
+                        <div class="rate">
+                            <img src="./images/rates/lines.png" />
+                            <p> التطبيق فعلاً ممتاز وسهل الاستخدام! قدرت أشتري كل احتياجاتي للمنزل من المنتجات الغذائية
+                                بكل سهولة ومن دون أي تعب. المنتجات كانت طازجة، والأسعار معقولة، وخدمة التوصيل كانت سريعة
+                                وموثوقة. تجربة رائعة وأنصح الجميع باستخدامه لتوفير الوقت والجهد! </p>
+                            <div class="info">
+                                <div>
+                                    <h3> محمد علي </h3>
+                                    <h4> متجر محمد </h4>
+                                </div>
+                                <img src="./images/rates/user.png" />
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                <div class="overlay-right"></div>
 
             </div>
 
@@ -606,6 +900,8 @@
 
 
         </div>
+        <div class="overlay-right"></div>
+
     </section>
 
 
@@ -671,7 +967,7 @@
 
     <!-- Start Faqs Section -->
 
-    <section class="faqs">
+    <section  id="faqs" class="faqs">
         <img class="line" src="./images/hero/line.svg" />
 
         <div class="container">
@@ -861,7 +1157,7 @@
 
     <!-- Start Tags Section -->
 
-    <section class="tags">
+    <sectio  id="partners" class="tags">
         <img class="line" src="./images/tags/line.png" />
 
         <div class="container">
@@ -878,78 +1174,246 @@
                     </div>
                 </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/1.png" />
+                <div class="tags-slider">
+                    <div class="row">
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/1.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/2.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/3.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/4.png" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/5.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/6.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/7.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/8.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/9.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/10.png" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/11.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/12.png" />
+                            </div>
+                        </div>
+
+
+
                     </div>
-                </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/2.png" />
+                    <div class="row">
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/1.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/2.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/3.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/4.png" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/5.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/6.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/7.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/8.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/9.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/10.png" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/11.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/12.png" />
+                            </div>
+                        </div>
+
                     </div>
-                </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/3.png" />
+                    <div class="row">
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/1.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/2.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/3.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/4.png" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/5.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/6.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/7.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/8.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/9.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/10.png" />
+                            </div>
+                        </div>
+
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/11.png" />
+                            </div>
+                        </div>
+
+                        <div class="col-lg-2 col-md-4 col-sm-6 col-6">
+                            <div class="tag">
+                                <img src="./images/partners/12.png" />
+                            </div>
+                        </div>
+
+
+
                     </div>
-                </div>
 
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/4.png" />
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/5.png" />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/6.png" />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/7.png" />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/8.png" />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/9.png" />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/10.png" />
-                    </div>
-                </div>
-
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/11.png" />
-                    </div>
-                </div>
-
-                <div class="col-lg-2 col-md-3 col-sm-6 col-6">
-                    <div class="tag">
-                        <img src="./images/partners/12.png" />
-                    </div>
+                    
                 </div>
 
                 <div class="col-12">
@@ -968,7 +1432,7 @@
 
             </div>
         </div>
-    </section>
+    </sectio>
 
 
     <!-- End Tags Section -->
@@ -976,12 +1440,12 @@
 
     <!-- Start Last New Section -->
 
-    <section class="last-news">
+    <section  id="news" class="last-news">
         <div class="container">
             <div class="row">
                 <h1> آخر الأخبار </h1>
 
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <div class="new">
                         <img src="./images/lastnews/1.png" />
                         <div class="text">
@@ -1004,7 +1468,7 @@
                 </div>
 
 
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <div class="new">
                         <img src="./images/lastnews/2.png" />
                         <div class="text">
@@ -1032,7 +1496,7 @@
 
 
 
-                <div class="col-lg-4 col-md-6 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <div class="new">
                         <img src="./images/lastnews/1.png" />
                         <div class="text">
@@ -1078,7 +1542,7 @@
 
         <div class="container">
             <div class="row">
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <div class="footer-content">
                         <h2> تواصل معنا من خلال: </h2>
                         <div class="contact-info">
@@ -1108,7 +1572,7 @@
                         </div>
                     </div>
                 </div>
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <div class="footer-content">
                         <h2> روابط مهمة </h2>
                         <ul>
@@ -1130,7 +1594,7 @@
                 </div>
 
 
-                <div class="col-lg-4 col-md-4 col-sm-12 col-12">
+                <div class="col-lg-4 col-md-12 col-sm-12 col-12">
                     <div class="footer-content">
                         <div class="logo">
                             <img src="./images/logocolored.svg" />
