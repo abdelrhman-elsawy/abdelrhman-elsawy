@@ -184,6 +184,10 @@ nav.fixed-nav .nav-content button{
   color: #757575 !important;
 }
 
+nav.fixed-nav .nav-content button.open-nav img{
+  color: #000 ; 
+  filter: invert(1);
+}
 /* End Nav Section */
 
 /* Start Hero Section */
