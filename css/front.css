@@ -96,6 +96,9 @@ ul {
 
 nav {
   background-color: #0f9c8e;
+  position: fixed;
+  width: 100%;
+  z-index: 60;
 }
 
 nav .nav-content {
@@ -194,6 +197,7 @@ nav.fixed-nav .nav-content button.open-nav img {
 
 .hero {
   position: relative;
+  padding-top: 35px;
 }
 
 .hero .brokenline {
@@ -1442,7 +1446,7 @@ footer .footer-content .links {
   .hero > img.line {
     position: absolute;
     right: 0;
-    top: 0;
+    top: 30px;
     z-index: -1;
     width: 151px;
     height: 139px;
@@ -1617,9 +1621,11 @@ footer .footer-content .links {
   }
 
   .categories .category img {
-    width: 99px;
+    width: 95%;
     height: 140px;
     object-fit: contain;
+    position: relative;
+    left: -12px;
   }
 
   .categories > img.line {

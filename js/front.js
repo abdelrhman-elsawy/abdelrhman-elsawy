@@ -128,5 +128,7 @@ $(document).ready(function () {
         $("nav").removeClass("fixed-nav");
         $(".logo img").attr("src", "./images/logo.svg");
     }
-});
+  });
+
+  
 });
