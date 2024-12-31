@@ -1062,9 +1062,7 @@ nav.fixed-nav .nav-content button.open-nav img {
 .tags {
   position: relative;
   padding-bottom: 337px;
-  overflow-x:hidden;
 }
-
 
 .tags .tags-slider {
   margin-bottom: 355px;
@@ -1351,7 +1349,7 @@ footer .footer-content .contact-info a {
   transition: 0.3s;
 }
 footer .footer-content .contact-info a span{
-
+  
 }
 
 footer .footer-content .contact-info a:hover {
