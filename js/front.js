@@ -4,24 +4,23 @@ $(document).ready(function () {
     $(".faqs .faq .header").not(this).next().slideUp();
   });
 
-  $("nav .open-nav").click(function () {
-    $(".nav-elements").slideDown();
-  });
-
-  $("nav .close-nav").click(function () {
-    $(".nav-elements").slideUp();
-
-  });
-
-  $(".nav-elements ul li").click(function () {
-    $(".nav-elements").slideUp();
-
-  });
-  $(".nav-elements ul li a").click(function () {
-    $(".nav-elements").slideUp();
-
-  });
-
+  if (window.matchMedia("(max-width: 950px)").matches) {
+    $("nav .open-nav").click(function () {
+      $(".nav-elements").slideDown();
+    });
+  
+    $("nav .close-nav").click(function () {
+      $(".nav-elements").slideUp();
+    });
+  
+    $(".nav-elements ul li").click(function () {
+      $(".nav-elements").slideUp();
+    });
+  
+    $(".nav-elements ul li a").click(function () {
+      $(".nav-elements").slideUp();
+    });
+  }
 
 
 

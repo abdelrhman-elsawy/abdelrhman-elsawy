@@ -57,12 +57,15 @@
 body {
   background-color: #fff;
   scroll-behavior: smooth;
+  overflow-x: hidden;
+
 }
 
 :root {
   --primary-color: #796f57; /* light brown */
   --secondary-color: #6d6249; /* brown */
 }
+
 
 body.normal {
   word-spacing: 0 !important;
@@ -88,6 +91,11 @@ ul {
 
 .hide {
   display: none !important;
+}
+
+.slick-list{
+  padding: 10px !important; 
+  padding-right: 0 !important;
 }
 
 /* General */
@@ -204,6 +212,7 @@ nav.fixed-nav .nav-content button.open-nav img {
   position: absolute;
   bottom: 0;
   width: 100%;
+  display:none;
 }
 
 .hero > img.line {
@@ -617,7 +626,7 @@ nav.fixed-nav .nav-content button.open-nav img {
 }
 
 .partners .partner:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .partners .partner img {
@@ -999,6 +1008,12 @@ nav.fixed-nav .nav-content button.open-nav img {
   padding-right: 10px;
   cursor: pointer;
   transition: 0.3s;
+  scale: 1;
+}
+
+.faqs .faq .header:hover{
+  scale: 1.1;
+
 }
 
 .faqs .faq .header i {
@@ -1117,7 +1132,7 @@ nav.fixed-nav .nav-content button.open-nav img {
 }
 
 .tags .tag:hover {
-  scale: 1.1;
+  scale: 1.05;
 }
 
 .tags .row {
@@ -1210,6 +1225,14 @@ nav.fixed-nav .nav-content button.open-nav img {
   object-fit: cover;
   border-radius: 16px;
   margin-bottom: 10px;
+  scale:1;
+  transition: 0.3s;
+}
+
+.last-news .new img:hover{
+  scale:1.05;
+  cursor:pointer
+
 }
 
 .last-news .new .text {
@@ -1243,6 +1266,11 @@ nav.fixed-nav .nav-content button.open-nav img {
   font-size: 24px;
   font-weight: 600;
   color: #000;
+  transition: 0.3s;
+}
+
+.last-news .new .text h1:hover{
+  color: #0f9c8e;
 }
 
 .last-news .new .text p {
@@ -1319,6 +1347,9 @@ footer .footer-content .contact-info {
 footer .footer-content .contact-info a {
   color: #757575;
   transition: 0.3s;
+}
+footer .footer-content .contact-info a span{
+  
 }
 
 footer .footer-content .contact-info a:hover {
