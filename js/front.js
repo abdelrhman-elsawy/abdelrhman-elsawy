@@ -71,6 +71,8 @@ $(document).ready(function () {
       centerMode: true,
       speed: 300,
       slidesToShow: 3,
+      autoplay: true,
+      autoplaySpeed: 2500,
       slidesToScroll: 1,
       responsive: [
         {
