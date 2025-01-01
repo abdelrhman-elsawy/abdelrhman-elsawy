@@ -4,6 +4,11 @@ $(document).ready(function () {
     $(".faqs .faq .header").not(this).next().slideUp();
   });
 
+  $(" #open-langs").click(function () {
+    $(".langs-dropdown").slideToggle();
+  });
+
+
   if (window.matchMedia("(max-width: 950px)").matches) {
     $("nav .open-nav").click(function () {
       $(".nav-elements").slideDown();
