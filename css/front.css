@@ -132,6 +132,20 @@ ul {
 #open-langs .langs-dropdown .content a:hover {
   color: #0f9c8e;
 }
+.hide-lg{
+  display:none;
+}
+
+@media(max-width:950px){
+  .hide-sm{
+    display:none;
+  }
+
+  .hide-lg{
+    display:block;
+  }
+}
+
 /* General */
 
 /* Start Nav Section */
@@ -658,6 +672,7 @@ nav.fixed-nav .nav-content button.open-nav img {
   justify-content: center;
   position: relative;
   margin-bottom: 129px;
+  z-index: 6;
 }
 
 .rates .header img:nth-child(1) {
@@ -692,9 +707,9 @@ nav.fixed-nav .nav-content button.open-nav img {
 .rates .overlay-left {
   position: absolute;
   left: 0%;
-  top: -30%;
+  top: 28%;
   z-index: 2;
-  height: 100%;
+  height: 52%;
   width: 40%;
   background-color: #fff;
   background: rgb(255, 255, 255);
@@ -721,9 +736,8 @@ nav.fixed-nav .nav-content button.open-nav img {
   position: absolute;
   right: 0;
   left: inherit;
-  top: 0;
-  height: 100%;
-  width: 200px;
+  top: 28%;
+  height: 52%;
   filter: blur(1px);
   background: rgb(255, 255, 255);
   background: -moz-linear-gradient(
@@ -742,9 +756,7 @@ nav.fixed-nav .nav-content button.open-nav img {
     rgba(255, 255, 255, 0) 100%
   );
   filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#ffffff",endColorstr="#ffffff",GradientType=1);
-  top: -30%;
   z-index: 2;
-  height: 100%;
   width: 40%;
 }
 
@@ -1209,6 +1221,7 @@ nav.fixed-nav .nav-content button.open-nav img {
 }
 
 .last-news .new {
+  margin-bottom: 35px;
 }
 
 .last-news .new img {
@@ -1354,8 +1367,7 @@ footer .footer-content .contact-info a:hover {
 }
 
 footer.en .footer-content .contact-info a div {
-  display: flex
-;
+  display: flex;
   flex-direction: row;
   gap: 5px;
   direction: rtl;
@@ -1454,6 +1466,7 @@ footer .footer-content .links {
   justify-content: center;
   color: #fff;
   font-size: 16px;
+  margin: 0;
 }
 
 /* End CopyRight Section */
@@ -1516,9 +1529,8 @@ footer .footer-content .links {
     display: flex;
     flex-direction: row;
     width: 150px;
-    height: 50px;
+    height: 46px;
   }
-
   .hero .text h5 {
     font-size: 16px;
     text-align: center;
@@ -1632,9 +1644,9 @@ footer .footer-content .links {
   .why-us > img.line {
     position: absolute;
     bottom: 16%;
-    left: 0;
+    left: -4%;
     transform: rotate(188deg);
-  }
+}
 
   .categories .header h1 {
     font-size: 40px;
@@ -1675,8 +1687,9 @@ footer .footer-content .links {
     font-size: 40px;
     font-weight: 700;
     color: #000;
-    text-align: right;
-  }
+    text-align: center;
+    width: 100%;
+}
 
   .partners .header .buttons {
     display: flex;
@@ -1727,6 +1740,11 @@ footer .footer-content .links {
     left: 10%;
     top: -44%;
   }
+
+  .rates .header {
+    margin-bottom: 31px;
+}
+
 
   .need-choose .phones {
     width: 100%;
@@ -1796,9 +1814,14 @@ footer .footer-content .links {
   }
 
   .faqs .faq .header div h2 {
-    font-size: 20px;
+    font-size: 18px;
     text-align: right;
   }
+
+
+  .tags .line {
+    display: none;
+}
 
   .faqs .faq .description {
     padding: 28px;
@@ -1807,6 +1830,14 @@ footer .footer-content .links {
     color: #757575;
     direction: rtl;
     display: none;
+  }
+
+  .last-news .new {
+    margin-bottom: 35px;
+  }
+
+  .last-news {
+    padding-top: 0;
   }
 
   .faqs .faq-image {
@@ -1903,13 +1934,13 @@ footer .footer-content .links {
 
   .last-news .news-paper {
     width: 100%;
-    height: 179px;
+    height: 205px;
     object-fit: contain;
     position: absolute;
     right: 50%;
     bottom: 0;
     transform: translateX(50%);
-  }
+}
 
   footer .row {
     flex-direction: column-reverse;
@@ -1921,10 +1952,24 @@ footer .footer-content .links {
     min-height: 217px;
   }
 
+  .rates .container{
+    padding: 0;
+  }
+
+  .rates {
+    margin-top: 335px;
+    margin-bottom: 90px;
+    position: relative;
+}
+
   .rates .slider .rates-slider .slide .rate {
-    width: 100%;
+    width: 83%;
     margin-right: 0;
     margin-left: 0;
+    z-index: 165165165;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
   }
 
   .tags .row {
@@ -1978,7 +2023,7 @@ footer .footer-content .links {
   }
   .rates > img {
     position: absolute;
-    bottom: -40%;
+    bottom: -16%;
     z-index: -1;
     width: 100%;
   }
