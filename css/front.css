@@ -1044,6 +1044,7 @@ nav.fixed-nav .nav-content button.open-nav img {
   color: #757575;
   direction: rtl;
   display: none;
+  padding-top: 0;
 }
 
 .faqs .faq-image {
@@ -1471,6 +1472,11 @@ footer .footer-content .links {
 
 /* End CopyRight Section */
 
+
+.slick-slide{
+  margin-right: 21px !important;
+}
+
 @media (max-width: 950px) {
   nav .nav-content .nav-elements ul {
     display: flex;
@@ -1484,6 +1490,10 @@ footer .footer-content .links {
     height: 100%;
     justify-content: center;
     gap: 36px;
+  }
+
+  .slick-slide{
+    margin-right: 0 !important;
   }
 
   nav .nav-elements {
@@ -1830,6 +1840,7 @@ footer .footer-content .links {
     color: #757575;
     direction: rtl;
     display: none;
+    padding-top: 0;
   }
 
   .last-news .new {
@@ -2169,3 +2180,5 @@ footer.en .footer-content p {
   text-align: left;
   direction: ltr;
 }
+
+
