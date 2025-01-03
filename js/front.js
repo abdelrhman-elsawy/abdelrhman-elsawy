@@ -1,6 +1,9 @@
 $(document).ready(function () {
   $(".faqs .faq .header").click(function () {
     $(this).next().slideToggle();
+    $(this).parent().toggleClass("active");
+    $(this).children("i").toggleClass("active");
+
     $(".faqs .faq .header").not(this).next().slideUp();
   });
 
@@ -41,11 +44,15 @@ $(document).ready(function () {
 
     $(".partners .prev-btn").click(function () {
       $(".partners-slider").slick("slickPrev");
+      updateButtonState(".partners-slider", ".partners .prev-btn", ".partners .next-btn");
     });
-
+  
     $(".partners .next-btn").click(function () {
       $(".partners-slider").slick("slickNext");
+      updateButtonState(".partners-slider", ".partners .prev-btn", ".partners .next-btn");
     });
+  
+    updateButtonState(".partners-slider", ".partners .prev-btn", ".partners .next-btn");
   }
 
   if ($(".tags-slider").length) {
@@ -60,11 +67,15 @@ $(document).ready(function () {
 
     $(".tags .prev-btn").click(function () {
       $(".tags-slider").slick("slickPrev");
+      updateButtonState(".tags-slider", ".tags .prev-btn", ".tags .next-btn");
     });
-
+  
     $(".tags .next-btn").click(function () {
       $(".tags-slider").slick("slickNext");
+      updateButtonState(".tags-slider", ".tags .prev-btn", ".tags .next-btn");
     });
+  
+    updateButtonState(".tags-slider", ".tags .prev-btn", ".tags .next-btn");
   }
 
   if ($(".rates-slider").length) {
@@ -112,16 +123,37 @@ $(document).ready(function () {
       ],
     });
 
-    // Custom previous button
+
     $(".rates .prev-btn").click(function () {
       $(".rates-slider").slick("slickPrev");
+      updateButtonState(".rates-slider", ".rates .prev-btn", ".rates .next-btn");
     });
-
-    // Custom next button
+  
     $(".rates .next-btn").click(function () {
       $(".rates-slider").slick("slickNext");
+      updateButtonState(".rates-slider", ".rates .prev-btn", ".rates .next-btn");
     });
+  
+    updateButtonState(".rates-slider", ".rates .prev-btn", ".rates .next-btn");
+
   }
+
+  function updateButtonState(sliderSelector, prevBtnSelector, nextBtnSelector) {
+    const slickInstance = $(sliderSelector).slick("getSlick");
+  
+    if (slickInstance.currentSlide === 0) {
+      $(prevBtnSelector).attr("disabled", true);
+    } else {
+      $(prevBtnSelector).attr("disabled", false);
+    }
+  
+    if (slickInstance.currentSlide === slickInstance.slideCount - slickInstance.options.slidesToShow) {
+      $(nextBtnSelector).attr("disabled", true);
+    } else {
+      $(nextBtnSelector).attr("disabled", false);
+    }
+  }
+  
 
 
   $(window).scroll(function(){
