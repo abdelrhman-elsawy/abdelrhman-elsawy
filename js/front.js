@@ -5,6 +5,11 @@ $(document).ready(function () {
     $(this).children("i").toggleClass("active");
 
     $(".faqs .faq .header").not(this).next().slideUp();
+    $(".faqs .faq .header").not(this).parent().removeClass("active");
+    $(".faqs .faq .header").not(this).children("i").removeClass("active");
+
+
+
   });
 
   $(" #open-langs").click(function () {
